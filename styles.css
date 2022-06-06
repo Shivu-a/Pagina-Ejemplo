@@ -69,3 +69,34 @@
 ::placeholder {
   filter: opacity(0.4);
 }
+
+.carousel {
+  max-height: 50vh;
+  overflow: hidden;
+  max-width: 95vw;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  background-color: #1e1e1e;
+}
+
+/* .carousel-item .active > img {
+  display: block;
+  margin: auto;
+  max-height: 50vh;
+  top: 0;
+  object-fit: contain;
+  aspect-ratio: 16/9;
+} */
+
+.carousel-item > img {
+  height: 50vh;
+  display: block;
+  margin: auto;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  margin: auto;
+}
