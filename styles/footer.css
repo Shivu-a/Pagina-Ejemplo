@@ -17,3 +17,12 @@ footer > h2 {
 #bootstrap-label-footer {
   color: blueviolet;
 }
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0, 0.5);
+}
