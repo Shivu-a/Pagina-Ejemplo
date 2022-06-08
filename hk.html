@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS & my CSS-->
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Hollow Knight</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Hollow Knight</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="/index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-login">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="/signup.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Juego -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Hollow Knight</h2>
+          <img class="img-fluid portadaPagina" src="/media/juegos/hk/hk-cover.webp" />
+        </div>
+        <div class="col-md-5">
+          <h5>Descripción:</h5>
+          <p class="descripcion">
+            <label class="titulo-descripcion" for="titulo-descripcion"
+              >Enfréntate a las profundidades de un reino olvidado</label
+            >Bajo la deteriorada ciudad de Petrópolis yace un antiguo reino en ruinas. A muchos les
+            atrae la vida bajo la superficie y van en busca de riquezas, gloria o respuestas a
+            viejos enigmas. Hollow Knight es una aventura de acción clásica en 2D ambientada en un
+            vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y páramos
+            mortales. Combate contra criaturas corrompidas, haz amistad con extraños insectos y
+            resuelve los antiguos misterios que yacen en el corazón de reino.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h2>Precio:</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

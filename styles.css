@@ -80,6 +80,22 @@
   filter: opacity(0.4);
 }
 
+.descripcion {
+  font-size: 1.5rem;
+  width: 350px;
+}
+
+.img-fluid.portadaPagina {
+  max-height: 60vh;
+  float: left;
+}
+
+.titulo-descripcion {
+  color: blue;
+  text-align: left;
+  font-weight: 700;
+}
+
 .carousel {
   max-height: 60vh;
   overflow: hidden;
