@@ -1,0 +1,77 @@
+.carousel {
+  max-height: 60vh;
+  overflow: hidden;
+  max-width: 95vw;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  background-color: #1e1e1e;
+}
+
+.carousel-item > img {
+  height: 60vh;
+  width: auto;
+  aspect-ratio: mantain;
+  display: block;
+  margin: auto;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  margin: auto;
+}
+
+.card-body.recomendados {
+  text-align: center;
+}
+
+.juego {
+  margin: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  transition: all 250ms;
+}
+
+.juego > h5,
+img,
+label {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.juego:hover {
+  transform: translateY(-5px);
+}
+
+.juego > img {
+  height: 200px;
+  width: auto;
+}
+
+.juego:hover > img {
+  filter: brightness(1.3);
+}
+
+#precioComun {
+  color: green;
+}
+
+#offer {
+  color: orangered;
+}
+
+.oferta {
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.img-fluid.banner {
+  display: block;
+  width: min-content;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
