@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
 .descripcion {
   font-size: 1.5rem;
   width: 100%;
@@ -78,4 +87,8 @@
 
 .col.requisitos {
   margin: 20px 10px;
+}
+
+.carousel.slide.games {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
 }
