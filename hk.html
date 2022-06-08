@@ -14,7 +14,8 @@
 
     <title>Hollow Knight</title>
   </head>
-  <body>
+  <body class="gamepage hk">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="#">Hollow Knight</a>
@@ -76,24 +77,60 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h2>Hollow Knight</h2>
-          <img class="img-fluid portadaPagina" src="/media/juegos/hk/hk-cover.webp" />
+          <div class="card cartaJuego">
+            <div class="card-body">
+              <h2 class="card-title">Hollow Knight</h2>
+              <img class="img-fluid portadaPagina" src="/media/juegos/hk/hk-cover.webp" />
+            </div>
+          </div>
         </div>
         <div class="col-md-5">
-          <h5>Descripción:</h5>
-          <p class="descripcion">
-            <label class="titulo-descripcion" for="titulo-descripcion"
-              >Enfréntate a las profundidades de un reino olvidado</label
-            >Bajo la deteriorada ciudad de Petrópolis yace un antiguo reino en ruinas. A muchos les
-            atrae la vida bajo la superficie y van en busca de riquezas, gloria o respuestas a
-            viejos enigmas. Hollow Knight es una aventura de acción clásica en 2D ambientada en un
-            vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y páramos
-            mortales. Combate contra criaturas corrompidas, haz amistad con extraños insectos y
-            resuelve los antiguos misterios que yacen en el corazón de reino.
-          </p>
+          <div class="card cartaJuego">
+            <div class="card-body">
+              <h5 class="card-title">Descripción:</h5>
+              <p class="descripcion">
+                <label class="card-subtitle" for="titulo-descripcion"
+                  >Enfréntate a las profundidades de un reino olvidado</label
+                >Bajo la deteriorada ciudad de Petrópolis yace un antiguo reino en ruinas. A muchos
+                les atrae la vida bajo la superficie y van en busca de riquezas, gloria o respuestas
+                a viejos enigmas. Hollow Knight es una aventura de acción clásica en 2D ambientada
+                en un vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y
+                páramos mortales. Combate contra criaturas corrompidas, haz amistad con extraños
+                insectos y resuelve los antiguos misterios que yacen en el corazón de reino.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="col-md-3">
-          <h2>Precio:</h2>
+          <div class="card cartaJuego">
+            <div class="card-body comprar">
+              <h2 class="card-subtitle precio">Precio:</h2>
+              <label class="precio" for="precio">20U$S</label>
+              <button class="btn btn-primary btn-lg">Comprar ahora</button>
+            </div>
+          </div>
+          <div class="card cartaJuego">
+            <div class="card-body tags">
+              <div class="tag">
+                <h6>Souls-Like</h6>
+              </div>
+              <div class="tag">
+                <h6>Metroidvania</h6>
+              </div>
+              <div class="tag">
+                <h6>Indie</h6>
+              </div>
+              <div class="tag">
+                <h6>Dificl</h6>
+              </div>
+              <div class="tag">
+                <h6>2D</h6>
+              </div>
+              <div class="tag">
+                <h6>Fantasia Oscura</h6>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
