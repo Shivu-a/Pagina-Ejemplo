@@ -84,3 +84,17 @@
 .carousel.slide.games {
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
 }
+
+iframe {
+  aspect-ratio: 16/9;
+}
+
+.botonTrailer {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}

@@ -50,12 +50,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Buscar por genero
               </a>
               <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                <li><a class="dropdown-item text-white" href="#">2D</a></li>
+                <li><a class="dropdown-item text-white" href="#">Mundo abierto</a></li>
               </ul>
             </li>
           </ul>
@@ -202,7 +202,7 @@
     <div class="container">
       <div class="card">
         <div class="card-body recomendados">
-          <h3>Juegos recomendados</h3>
+          <h3>Juegos del momento</h3>
         </div>
       </div>
       <div class="row">
@@ -288,10 +288,10 @@
       </div>
     </div>
 
-    <!-- Pre-Compra -->
+    <!-- Aviso -->
 
     <div class="container titulo-precompra">
-      <h1>Pre-Compra el juego mas esperado!</h1>
+      <h1>Stray: un mundo gatuno</h1>
     </div>
 
     <div class="container nesting">
@@ -313,9 +313,81 @@
       <div class="row">
         <div class="col"></div>
         <div class="col-md-6">
-          <button class="btn btn-lg btn-primary">Pagina de la Tienda</button>
+          <button
+            class="btn btn-lg btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAviso"
+          >
+            Avisame cuando salga a la venta!
+          </button>
         </div>
         <div class="col"></div>
+      </div>
+    </div>
+
+    <!-- Imagenes con juego + boton -->
+
+    <div class="container juegosRecomendados">
+      <div class="row">
+        <h3>Juegos que recomienda el autor de la pagina</h3>
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 juegoRecomendado">
+              <img
+                onclick="window.location.href = '/hk.html'"
+                class="img-fluid imagenJuegoRecomendado"
+                src="/media/juegos/hk/hk-cover.webp"
+                alt=""
+                srcset=""
+              />
+              <div class="row">
+                <div class="col-sm-12">
+                  <button onclick="window.location.href = '/hk.html'" class="btn btn-lg btn-info">
+                    Ir a pagina de la tienda
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 juegoRecomendado">
+              <img
+                onclick="window.location.href = '/elden-ring.html'"
+                class="img-fluid imagenJuegoRecomendado"
+                src="/media/juegos/elden-ring/elden-ring-cover.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="row">
+                <div class="col-sm-12">
+                  <button
+                    onclick="window.location.href = '/elden-ring.html'"
+                    class="btn btn-lg btn-info"
+                  >
+                    Ir a pagina de la tienda
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 juegoRecomendado">
+              <img
+                onclick="window.location.href = '/stray.html'"
+                class="img-fluid imagenJuegoRecomendado"
+                src="/media/juegos/stray/stray-cover.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="row">
+                <div class="col-sm-12">
+                  <button
+                    onclick="window.location.href = '/stray.html'"
+                    class="btn btn-lg btn-info"
+                  >
+                    Ir a pagina de la tienda
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -342,6 +414,67 @@
         ></a>
       </div>
     </footer>
+
+    <!-- Modals -->
+
+    <!-- Modal pop up follow stray -->
+    <div
+      class="modal fade"
+      id="modalAviso"
+      tabindex="-1"
+      aria-labelledby="modalAvisoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalAvisoLabel">Menu de aviso</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <img
+                  src="/media/juegos/stray/stray-cover.jpg"
+                  alt="Stray-cover"
+                  class="img-fluid"
+                />
+                <h5 style="text-align: center">
+                  Ingrese su email para que le podamos avisar cuando el juego salga a la venta
+                </h5>
+                <form action="">
+                  <input
+                    class="inputEmail"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Ingrese su Email"
+                  />
+                  <button
+                    style="display: block; margin: auto"
+                    type="button"
+                    data-bs-dismiss="modal"
+                    class="btn btn-warning"
+                  >
+                    Avisame
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cambie de opinion
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
   </body>
