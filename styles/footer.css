@@ -25,7 +25,8 @@ footer {
   flex-direction: column;
   background-color: #1e1e1e;
   margin-top: 50px;
-  height: 100px;
+  width: 100%;
+  padding: 20px 0px;
 }
 
 footer h5 {

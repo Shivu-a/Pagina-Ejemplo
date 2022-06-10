@@ -1,3 +1,11 @@
+* {
+  overflow-x: clip;
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
 .descripcion {
   font-size: 1.5rem;
   width: 100%;
@@ -9,6 +17,7 @@
   max-height: 60vh;
   float: left;
   width: 100%;
+  border-radius: 5px;
 }
 
 .card-subtitle {
@@ -82,7 +91,8 @@
 }
 
 .carousel.slide.games {
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 iframe {
@@ -97,4 +107,14 @@ iframe {
   padding: 15px 30px;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .container.requerimientos > .row {
+    overflow-x: hidden;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

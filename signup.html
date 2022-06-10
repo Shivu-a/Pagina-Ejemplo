@@ -10,9 +10,9 @@
 
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="stylesheet" href="/styles/sign-up.css" />
 
-    <title>Login</title>
+    <title>Sign-up</title>
   </head>
   <body class="login-body">
     <div class="container">
@@ -23,6 +23,16 @@
             <div class="card-body login">
               <div class="imagenFalsa img-fluid"></div>
               <form class="login-form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Ingrese su nombre de usuario deseado aqui"
+                  />
+                </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
                   <input
@@ -42,7 +52,25 @@
                     placeholder="Ingrese su contraseña aqui"
                   />
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg">Iniciar Sesión</button>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Ingrese contraseña nuevamente</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Ingrese su contraseña nuevamente"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="btn btn-primary btn-lg"
+                >
+                  Crear usuario
+                </button>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                   <label class="form-check-label" for="flexCheckDefault">
@@ -62,15 +90,40 @@
         </div>
         <div class="col"></div>
       </div>
-      <div class="row">
-        <div class="col">
-          <a href="http://" class="anchor-sign-up" target="_blank" rel="noopener noreferrer"
-            >¿No tienes cuenta? ¡Crea una!</a
-          >
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Esta pagina no cuenta con la funcionalidad de iniciar sesion/crear cuenta aun</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Entendido
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
+    <script src="/scripts/login.js"></script>
     <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

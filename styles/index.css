@@ -1,17 +1,22 @@
+* {
+  overflow-x: clip;
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
 .carousel {
-  max-height: 60vh;
   overflow: hidden;
-  max-width: 95vw;
+
   margin: auto;
-  margin-top: 20px;
   position: relative;
   background-color: #1e1e1e;
 }
 
 .carousel-item > img {
-  height: 60vh;
+  height: 50vh;
   width: auto;
-  aspect-ratio: mantain;
   display: block;
   margin: auto;
 }
@@ -24,6 +29,7 @@
 
 .container > .card {
   margin-top: 30px;
+  background: none;
 }
 
 .card-body.recomendados {
@@ -51,6 +57,7 @@ label {
 
 .juego > img {
   height: 200px;
+  aspect-ratio: mantain;
   width: auto;
 }
 
@@ -78,6 +85,10 @@ label {
   margin: auto;
   border-radius: 20px;
   margin-bottom: 10px;
+}
+
+.container-fluid.destacado {
+  margin-top: 60px;
 }
 
 .container.titulo-precompra {
@@ -148,4 +159,14 @@ label {
   font-weight: 700;
   background-color: rgb(124, 124, 153);
   --bs-btn-border-color: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-item > img {
+    height: 20vh;
+  }
+
+  .juego {
+    margin: 0;
+  }
 }
